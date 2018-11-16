@@ -2,7 +2,7 @@ context("Piecewise domains of a box-cox transformation")
 
 test_that("Positive values work.", {
   num_vec <- c(1:10)
-  expect_identical(bc_transform(num_vec), log(num_vec^2))
+  expect_identical(bc_transform(num_vec), log(num_vec))
   expect_identical(bc_transform(num_vec, 2), (num_vec^2 - 1)/2)
   expect_identical(bc_transform(num_vec, -2), (num_vec^(-2) - 1)/(-2))
 })
