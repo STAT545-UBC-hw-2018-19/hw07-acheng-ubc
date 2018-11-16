@@ -23,5 +23,5 @@ You can install this edited powers package either by:
 1. Cloning or downloading the repository into your RStudio and building the package, or
 1. With the `install_github()` function from the `devtools` library
 ```
-devtools::install_github("STAT545-UBC-studnets/hw07-acheng-ubc/powers")
+devtools::install_github("STAT545-UBC-students/hw07-acheng-ubc/powers", build_vignettes = TRUE)
 ```
