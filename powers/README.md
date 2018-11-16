@@ -7,7 +7,7 @@
 powers
 ======
 
-This is an R package that gives `sqrt()` friends by providing other power functions.
+This is an R package that gives `sqrt()` friends by providing other power functions, as well as a box-cox transformation function via bc\_transform().
 
 Installation
 ------------
