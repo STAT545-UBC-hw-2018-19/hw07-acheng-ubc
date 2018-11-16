@@ -4,16 +4,21 @@
 \name{powers}
 \alias{powers}
 \alias{powers-package}
-\title{Convenient Computation of Powers}
+\title{Convenient Computation of Powers and Box Cox Transformation}
 \description{
 Are you tired of using the power operator, \code{^} or \code{**} in R?
 Use this package to call functions that apply common powers
 to your vectors.
+}
+\details{
+Is your data suffering from non-normality or heteroscedasticity? Fear not, use
+the Box-Cox transformation function bc_transform() in this package to lower the
+variance and normalize your data!
 }
 \note{
 This package isn't actually meant to be serious. It's just for
 teaching purposes.
 }
 \author{
-Vincenzo Coia
+Vincenzo Coia, Alex Cheng
 }
