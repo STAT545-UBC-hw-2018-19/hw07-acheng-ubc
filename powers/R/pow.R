@@ -9,7 +9,7 @@
 #' @param plot_it Display a plot of \code{x} vs the output? Use logical.
 #'
 #' @return The vector \code{x}, raised to the power of \code{a}.
-pow <- function(x, a, plot_it=FALSE) {
+pow <- function(x, a, plot_it) {
     res <- x^a
     if (plot_it) print(ggplot2::qplot(x, res))
     return(res)
