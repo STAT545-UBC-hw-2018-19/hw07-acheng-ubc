@@ -9,7 +9,7 @@ test_that("Positive values work.", {
 
 test_that("Vectors with negative values and zero work.", {
   neg_vec <- c(-5:5)
-  delta_neg_vec <- neg_vec + abs(min(neg_vec)) + 0.01 * abs(min(neg_vec))
+  delta_neg_vec <- neg_vec + abs(min(neg_vec)) + 0.1 * abs(min(neg_vec))
   expect_equal(bc_transform(neg_vec), log(delta_neg_vec))
   expect_equal(bc_transform(neg_vec, 2), (delta_neg_vec^2 - 1)/2)
   expect_equal(bc_transform(neg_vec, -2), (delta_neg_vec^(-2) - 1)/(-2))
