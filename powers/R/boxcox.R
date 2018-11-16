@@ -1,8 +1,9 @@
 #' Perform a Box-Cox transformation
 #'
 #' @param x Vector of data points
-#' @param lambda Lambda value to be inputted manually or estimated using bc_lambda()
-#'
+#' @param lambda Lambda value to be inputted manually
+#' @param plot_it Logical to be passed to pow (really just a work-around for a strange error when checking in Rstudio
+#' 
 #' @return Vector of transformed data points
 #' @export
 #'

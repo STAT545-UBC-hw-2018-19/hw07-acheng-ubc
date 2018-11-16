@@ -9,7 +9,9 @@ bc_transform(x, lambda = 0, plot_it = FALSE)
 \arguments{
 \item{x}{Vector of data points}
 
-\item{lambda}{Lambda value to be inputted manually or estimated using bc_lambda()}
+\item{lambda}{Lambda value to be inputted manually}
+
+\item{plot_it}{Logical to be passed to pow (really just a work-around for a strange error when checking in Rstudio}
 }
 \value{
 Vector of transformed data points
