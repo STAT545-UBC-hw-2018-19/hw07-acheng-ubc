@@ -14,7 +14,7 @@ knitr::opts_chunk$set(
 
 [![Build Status](https://travis-ci.org/vincenzocoia/powers.svg?branch=master)](https://travis-ci.org/vincenzocoia/powers)
 
-__Note__: This R package is not mean to be "serious". It's just for teaching purposes. 
+__Note__: This R package is not mean to be "serious". It's just for teaching purposes. The package now also contains a function to perform a box-cox transformation.
 
 # powers
 
@@ -26,16 +26,21 @@ You can install powers from github with:
 
 ```{r gh-installation, eval = FALSE}
 # install.packages("devtools")
-devtools::install_github("vincenzocoia/powers")
+devtools::install_github("STAT545-UBC-students/hw07-acheng-ubc/powers", build_vignettes = TRUE)
 ```
 
 ## Example
 
-See the vignette for more extensive use, but here's an example:
+See the vignette for more extensive use, but here's are two examples:
 
 ```{r example}
 powers::reciprocal(2)
 ```
+
+```{r Box-Cox example}
+powers::bc_transform(powers::skewvec)
+```
+
 
 ## For Developers
 

@@ -45,14 +45,17 @@ Is your data suffering from non-normality or heteroscedasticity? A Box Cox trans
 
 ```{r}
 # Non-normal data!
-x = c(-5,-4,-6,-2,0,1,2.2,1.5,1.1,3.2,4,3,2,6.7,9.9,10.6,16.9)
-bc_transform(x) # Default lambda value is 0
+hist(skewvec)
+bc_transform(skewvec) # Default lambda value is 0
+
+# Slightly better looking data even with a default lambda value!
+hist(bc_transform(skewvec))
+
+# Much better looking data with a lambda of 0.25!
+hist(bc_transform(skewvec, 0.25))
 
 # We can see that the variance in the data is now much smaller!
-sd(x)
-sd(bc_transform(x))
-
-# Use bc_lambda_get() to estimate an appropriate lambda for your data!
-#bc_lambda_get(x)
+sd(skewvec)
+sd(bc_transform(skewvec))
 ```
 

@@ -25,3 +25,5 @@ You can install this edited powers package either by:
     ```
     devtools::install_github("STAT545-UBC-students/hw07-acheng-ubc/powers", build_vignettes = TRUE)
     ```
+
+More details can be found in the README in the /powers/ directory!

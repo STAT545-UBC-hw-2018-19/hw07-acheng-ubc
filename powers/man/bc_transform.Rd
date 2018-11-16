@@ -4,7 +4,7 @@
 \alias{bc_transform}
 \title{Perform a Box-Cox transformation}
 \usage{
-bc_transform(x, lambda = 1)
+bc_transform(x, lambda = 0, plot_it = FALSE)
 }
 \arguments{
 \item{x}{Vector of data points}
@@ -20,5 +20,6 @@ Perform a Box-Cox transformation
 \examples{
 bc_transform(tenvec, 0)
 bc_transform(-5:5, 1)
+bc_transform(skewvec)
 
 }
